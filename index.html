@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Camere</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background: var(--bs-gray-900);color: var(--bs-white);">
+    <section style="margin-top: 31px;">
+        <div class="container">
+            <div class="row text-center" style="text-align: center;">
+                <div class="col-md-6 col-lg-5 offset-lg-1 d-flex d-md-flex flex-column align-items-md-start align-items-lg-center"
+                    style="text-align: center;">
+                    <h1>Inserisci nome</h1>
+                    <input type="text" id="nomeInserito" name="nomeInserito" placeholder="Nome">
+                    <button id="nomeBtn" class="btn btn-primary" type="button"
+                        style="margin-top: 17px;margin-bottom: 18px;">Inserisci</button>
+                </div>
+                <div id="elencoNomi" class="col-md-6 col-lg-5">
+                    <h1>Nomi</h1>
+                    <p id="nome1"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 offset-lg-4 d-flex align-items-md-center" style="margin-top: 25px;">
+                    <h2 style="margin-right: 29px;">Camere</h2><input id="cameraRange" class="form-range" type="range"
+                        value="1" min="1" max="4" step="1" style="width: 40%;">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button id="assegna" class="btn btn-primary" type="button"
+                        style="margin-top: 16px;margin-bottom: 16px;">Assegna
+                        camere</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="camera1" class="col-md-3 text-center">
+                    <h4 class="text-center">Camera 1</h4>
+                </div>
+                <div id="camera2" class="col-md-3 text-center" style="display: none;">
+                    <h4 class="text-center">Camera 2</h4>
+                </div>
+                <div id="camera3" class="col-md-3 text-center" style="display: none;">
+                    <h4 class="text-center">Camera 3</h4>
+                </div>
+                <div id="camera4" class="col-md-3 text-center" style="display: none;">
+                    <h4 class="text-center">Camera 4</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
