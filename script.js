@@ -6,7 +6,7 @@ let arrCamere = ['camera1', 'camera2', 'camera3', 'camera4'];
 
 let nCamere = 1;
 
-let arrTempCamere = [];
+let arrTempCamere = [[]];
 
 function creaArrCamere(nCamere) {
 	if (nCamere === 1) arrTempCamere = [[]];
@@ -21,7 +21,9 @@ $('#nomeBtn').click(function (e) {
 	if (nome) {
 		arrNomi.push(nome);
 
-		$('#elencoNomi').append(`<p>${nome}</p>`);
+		$('#elencoNomi').append(
+			`<p class="mb-0" style="font-size: 1.5rem; margin-bottom= 0rem">${nome}</p>`
+		);
 
 		$('#nomeInserito').val('');
 	}
@@ -50,7 +52,7 @@ $('#assegna').click(function (e) {
 	arrTempCamere.forEach((element, index) => {
 		element.forEach((elem) => {
 			$(`#camera${index + 1}`).append(
-				`<p class="nomeElenco">${elem}</p>`
+				`<p class="nomeElenco ms-3 mb-1" style="font-size: 1.2rem;">${elem}</p>`
 			);
 		});
 	});
